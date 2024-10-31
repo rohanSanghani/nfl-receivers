@@ -28,7 +28,7 @@ function displayTopReceivers(players) {
   const list = document.getElementById('receivers-list');
   list.innerHTML = ''; // Clear previous list
 
-  // Sort players by receiving yards and select top 10
+  //sort by receiving yards, select top 10
   const topReceivers = players.sort((a, b) => b.ReceivingYards - a.ReceivingYards).slice(0, 10);
 
   topReceivers.forEach(player => {
